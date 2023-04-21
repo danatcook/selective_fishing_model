@@ -1,0 +1,8 @@
+# selective_fishing_model
+files associated with selective fishing model manuscript.
+
+These data and code were generated in support of the manuscript: Cook DT, Schmitt RJ, Holbrook SJ, and HV Moeller, Ecosphere. 
+
+To investigate the impacts of selectively harvesting functional groups of herbivorous fishes on coral resilience, we used a dynamic model that is grounded by the coral reef system in Moorea, French Polynesia. Our model simulates the fraction of a reef occupied through time by classes of benthic spaceholders (coral, two stages of macroalgae, and turf). Benthic and fishing dynamics are linked through the harvesting of two functional groups of herbivorous fishes. We utilize data on the reef and catch abundances of fish in Moorea to inform our model and empirically explore patterns of fishing selectivity. 
+
+We first explored catch composition within the small-scale reef fishery in Moorea using survey data collected in 2014 and 2015 from roadside stands where fishers sell their catch (DOI:10.1575/1912/bco-dmo.709963.1). We then assessed patterns of selectivity by fishers for different trophic levels and functional groups of fish by re-plotting data from Figure 5 in Rassweiler et al. 2020. Finally, we used a dynamic coral reef model that links differential fishing on two key herbivore functional groups to the outcome of competitive dynamics between coral and macroalgae. This model was parameterized with values used in Fung et al. 2011 Ecology and Briggs et al. 2018 PLoS ONE or from the literature (see Appendix S1). We parameterized the scaling constant that reduces herbivory on mature macroalgae (ζ) using data on bites taken by foraging Naso lituratus in 2017. Model simulations and analysis were run using R (version 4.1.1) and MatLab.
