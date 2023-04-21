@@ -1,7 +1,7 @@
 # selective_fishing_model
 files associated with selective fishing model manuscript.
 
-These data and code were generated in support of the manuscript: Cook DT, Schmitt RJ, Holbrook SJ, and HV Moeller, Ecosphere. 
+These data and code were generated in support of the manuscript: Cook DT, Schmitt RJ, Holbrook SJ, and HV Moeller, "Modeling the effects of selectively fishing key functional groups of herbivores on coral resilience." 
 
 To investigate the impacts of selectively harvesting functional groups of herbivorous fishes on coral resilience, we used a dynamic model that is grounded by the coral reef system in Moorea, French Polynesia. Our model simulates the fraction of a reef occupied through time by classes of benthic spaceholders (coral, two stages of macroalgae, and turf). Benthic and fishing dynamics are linked through the harvesting of two functional groups of herbivorous fishes. We utilize data on the reef and catch abundances of fish in Moorea to inform our model and empirically explore patterns of fishing selectivity. 
 
