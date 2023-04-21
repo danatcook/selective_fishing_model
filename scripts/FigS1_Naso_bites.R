@@ -10,16 +10,15 @@ library(readr)
 
 # Data -----
 # Fish feeding data
-bite.data <- read_csv("data/Naso_bite_data_2017.csv") %>% 
+bite.data <- read_csv("data/Naso_lituratus_bite_data_Moorea_2017.csv") %>% 
   select(fish_ID, species, turf_bites, sargassum_bites, turbinaria_bites, dictyota_bites, amansia_bites)
 
 # Metadata to group algal taxa 
-algae_group <- read_csv("data/Naso_bite_data_algae_groups.csv")
+algae_group <- read_csv("data/Naso_lituratus_bite_data_Moorea_2017_algae_groups.csv")
 
 # Data wrangling -----
 # Get df into format to calculate total bites for each algal taxa (pool fish)
 naso.data <- bite.data %>% 
-  filter(species == "Naso lituratus") %>% 
   pivot_longer(cols = ends_with("bites"),
                names_to = "taxa",
                values_to = "bites") %>% 

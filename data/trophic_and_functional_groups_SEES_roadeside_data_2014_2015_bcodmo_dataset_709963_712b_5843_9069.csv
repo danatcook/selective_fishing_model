@@ -1,0 +1,51 @@
+genus,Trophic_Level,Functional_Group
+Acan_Cten,Herbivore,Non-browsing herbivore
+Acanthurus,Herbivore,Non-browsing herbivore
+Albula,Carnivore,Carnivore
+Balistapus,Carnivore,Carnivore
+Balistoides,Carnivore,Carnivore
+Calo_Scar,Herbivore,Browsing herbivore
+Calotomus,Herbivore,Browsing herbivore
+Cantherhines,Other,Other
+Carangidae_fam,Carnivore,Carnivore
+Carangoides,Carnivore,Carnivore
+Caranx,Carnivore,Carnivore
+Cephalopholis,Carnivore,Carnivore
+Chanos,Planktivore,Planktivore
+Cheilinus,Carnivore,Carnivore
+Cheilopogon,Planktivore,Planktivore
+Chlor_Scar,Herbivore,Non-browsing herbivore
+Chlorurus,Herbivore,Non-browsing herbivore
+Coryphaena,Carnivore,Carnivore
+Crenimugil,Planktivore,Planktivore
+Ctenochaetus,Herbivore,Non-browsing herbivore
+Cypselurus,Planktivore,Planktivore
+Epibulus,Carnivore,Carnivore
+Epinephelus,Carnivore,Carnivore
+Gnathodentex,Carnivore,Carnivore
+Heteropriacanthus,Carnivore,Carnivore
+Katsuwonus,Carnivore,Carnivore
+Kyphosus,Herbivore,Browsing herbivore
+Labridae,Unknown,Unknown
+Lethrinidae_fam,Carnivore,Carnivore
+Lethrinus,Carnivore,Carnivore
+Liza,Planktivore,Planktivore
+Lutjanus,Carnivore,Carnivore
+Monotaxis,Carnivore,Carnivore
+Mugilidae_fam,Planktivore,Planktivore
+Mulloid_Parup,Carnivore,Carnivore
+Mulloidichthys,Carnivore,Carnivore
+Myripristis,Carnivore,Carnivore
+Naso,Herbivore,Browsing herbivore
+Parupeneus,Carnivore,Carnivore
+Priacanthus,Carnivore,Carnivore
+Pseudobalistes,Other,Other
+Sarda,Carnivore,Carnivore
+Sargocentron,Carnivore,Carnivore
+Scarus,Herbivore,Non-browsing herbivore
+Scombridae,Carnivore,Carnivore
+Selar,Planktivore,Planktivore
+Siganus,Herbivore,Browsing herbivore
+Sphyraena,Carnivore,Carnivore
+Thunnus,Carnivore,Carnivore
+Tylosurus,Carnivore,Carnivore

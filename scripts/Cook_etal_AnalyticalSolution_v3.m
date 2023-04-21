@@ -18,7 +18,7 @@ gM = 0.6; % growth of mature mac over turf ## NOTE: SHOULD THIS GO INTO I? ##
 dC = 0.05; % coral mortality
 dI = 0.5; % immature mac mortality
 dM = 0.3; % mature mac mortality
-d = 0.001; % fish non-density-dependent mortality
+d = 0.00; % fish non-density-dependent mortality
 r = 0.5; % recruitment of immature mac from reproducing local adults
 gamma = 0.5; % scaling of mac overgrowth onto coral
 omega = 2; % maturation rate of immature mac into mature mac
@@ -529,7 +529,7 @@ for j = 2:length(sigma_set)
     else
         break % If you're "off the charts", stop computing
     end
-    save('critical_thresh_v1')
+    save('critical_thresh_v2')
     
 end
 
@@ -586,12 +586,13 @@ for j = 1:length(sigma_set)
     else
         break % If you're "off the charts", stop computing
     end
-    
+    save('critical_thresh_v2')
     
 end
-save('critical_thresh_v1')
+%
+
 %%
-load('critical_thresh_v1')
+load('critical_thresh_v2')
 figure(2)
 clf(2)
 hold on
@@ -610,7 +611,7 @@ plot(sigma_set,critC,'LineWidth',2,'Color','black','LineStyle','-')
 box on
 text(.6,.02,'Coral-dominated','FontSize',18)
 text(.1,.12,'Macroalgae-dominated','FontSize',18)
-text(.15,.041,'Bistable','FontSize',18)
+text(.12,.041,'Bistable','FontSize',18)
 set(gca,'FontSize',18)
 
 
@@ -629,7 +630,7 @@ gM = 0.6; % growth of mature mac over turf ## NOTE: SHOULD THIS GO INTO I? ##
 dC = 0.05; % coral mortality
 dI = 0.5; % immature mac mortality
 dM = 0.3; % mature mac mortality
-d = 0.001; % fish mortality
+d = 0.00; % fish mortality
 r = 0.5; % recruitment of immature mac from reproducing local adults
 gamma = 0.5; % scaling of mac overgrowth onto coral
 omega = 2; % maturation rate of immature mac into mature mac
@@ -720,8 +721,11 @@ end
 
 end
 
+save('bifurcdiag_v1')
 
 %% Make the figure
+
+load('bifurcdiag_v1')
 
 % Create the figure and size it
 figure(3)

@@ -15,26 +15,25 @@ Pcol <- '#fd8d3c' # non-browsing herbivore color (parrotfish)
 Ucol <- '#99d8c9' # browsing herbivore color (unicornfish)
 
 # Data -----
-SEES <- read_csv("data/SEES_roadside_data_2014_2015.csv")
+SEES <- read_csv("data/SEES_roadside_data_2014_2015_bcodmo_dataset_709963_712b_5843_9069.csv") 
+SEES <- SEES[-1,]
 
 # List of functional groups for fish in the catch
-func_SEES <- read_csv("data/func_browsing_nonbrowsing_SEES.csv")
+func_SEES <- read_csv("data/trophic_and_functional_groups_SEES_roadeside_data_2014_2015_bcodmo_dataset_709963_712b_5843_9069.csv")
+
 
 
 # Data wrangling: proportional abundance of trophic and functional groups in catch -----
-
-## Calculate total and proportional abundance of 'browsers', 'scrapers/excavators', and 'all other fish' per year
 # Extract year from date column, currently in format 'mm/dd/yyyy' and we want 'yyyy'
-SEES$Date <- as.POSIXct(SEES$Date, format = "%m/%d/%Y")
-SEES$Date <- format(SEES$Date, format="%Y")
+SEES$date <- as.POSIXct(SEES$date, format = "%Y/%m/%d")
+SEES$date <- format(SEES$date, format="%Y")
 
-
-# Summarize SEES dataset
+## Summarize SEES dataset: calculate total and proportional abundance of 'browsers', 'scrapers/excavators', and 'all other fish' per year
 # Subset dataset to only keep taxonomy and length columns
 SEES <- SEES %>% 
-  select(Updated_Name,Length_cm, Date)
+  select(genus,length, date) 
 # Merge data with functional group metadata
-SEES <- merge(SEES,func_SEES, by = "Updated_Name")
+SEES <- merge(SEES,func_SEES, by = "genus")
 # Sum the number of fish in each group
 SEES <- SEES %>% 
   mutate(Number = 1)
@@ -52,6 +51,7 @@ SEES_totalYear <- SEES %>%
 SEES_totalYear <- SEES_totalYear %>%
   mutate(Total_Number = sum(Number)) %>% 
   mutate(Prop_Number = Number/Total_Number)
+
 
 
 # Visualization: proportional abundance of trophic and functional groups in catch -----
